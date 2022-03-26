@@ -12,6 +12,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
+	overflow: hidden;
 }
 
 #imgContent {
@@ -165,10 +166,70 @@ button {
 	text-align: center;
 }
 
+#sideMenu {
+	position: absolute;
+	width: 250px;
+	height: 100vh;
+	background-color: rgb(129, 129, 129);
+	padding: 150px 0px 150px 30px;
+	font-weight: bold;
+	top: 0px;
+	right: -250px;
+	z-index: 10;
+	border: 2px solid white;
+	border-right: transparent;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	transition: 600ms;
+}
+
+hr {
+	width: 70%;
+	height: 5px;
+	border-radius: 100px;
+	background-color: cyan;
+	margin: 5px 0px;
+}
+
+#sideMenuInfo {
+	width: 150px;
+	margin-top: 50px;
+	font-weight: lighter;
+	color: white;
+}
+
+#memesSeenSpan,
+#memesLikedSpan {
+	color: red;
+	font-size: 25px;
+	font-weight: 400;
+}
+
+#sideMenuButtonExit {
+	position: absolute;
+	top: 50px;
+	transform: scale(1.5);
+	cursor: pointer;
+}
+
+#sideMenuButtonOpen {
+	position: fixed;
+	right: 10%;
+	top: 5%;
+	transform: scale(2);
+	border-radius: 50%;
+	padding: 5px;
+	cursor: pointer;
+}
+
 @media only screen and (max-width: 440px) {
 	main {
 		width: 90%;
 		max-height: 700px;
+	}
+	#sideMenuButtonOpen {
+		right: 5%;
+		transform: scale(1.5);
 	}
 }
 
