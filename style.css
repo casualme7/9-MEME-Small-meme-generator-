@@ -170,7 +170,7 @@ button {
 	position: absolute;
 	width: 250px;
 	height: 100vh;
-	background-color: rgb(129, 129, 129);
+	background-color: rgb(156, 158, 180);
 	padding: 150px 0px 150px 30px;
 	font-weight: bold;
 	top: 0px;
@@ -189,13 +189,6 @@ hr {
 	border-radius: 100px;
 	background-color: cyan;
 	margin: 5px 0px;
-}
-
-#sideMenuInfo {
-	width: 150px;
-	margin-top: 50px;
-	font-weight: lighter;
-	color: white;
 }
 
 #memesSeenSpan,
